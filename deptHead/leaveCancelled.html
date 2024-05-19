@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        padding: 20px 0 !important;
+        display: flex;
+        justify-content: center;
+        background: #f3f3f3;
+      }
+      .payrun_main_container {
+        width: 60%;
+      }
+      @media screen and (max-width: 768px) {
+        .payrun_main_container {
+          width: 90%;
+        }
+      }
+            .container {
+        background: white;
+        padding: 0 !important;
+        width: 100%;
+        height: max-content;
+        font-size: 12px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .paryrun_logo {
+        max-width: 130px !important;
+        height: 35px !important;
+        padding-top: 20px !important;
+      }
+      .svg-img {
+        height: 120px;
+        background-image: url("https://payrun-local-public.imgix.net/payrun_logo/email_banner.png?h=500&w=1200");
+        background-repeat: no-repeat;
+        object-fit: fill !important;
+        background-size: cover !important;
+      }
+      @media screen and (max-width: 768px) {
+        .svg-img {
+          height: 80px;
+        }
+      }
+    .header {
+        line-height: 2vh;
+        color: white;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px !important;
+      }
+      .header h1{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 2vh;
+        color:white;
+        text-align:left;
+        height:100%;
+        padding-top:5px !important;
+      }
+      @media screen and (max-width: 768px) {
+        .header {
+          line-height: 1vh;
+          padding-top: 10px;
+          height: max-content;
+        }
+        .header h1 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .content {
+        padding: 40px 5%;
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          padding: 20px 5%;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+      .email_footer p {
+        padding: 0px;
+        line-height: 50%;
+      }
+      .double_margin p{
+        line-height: 50%;
+      }
+      .bold_text {
+        font-weight: 600;
+      }
+      .blue_text,
+      a {
+        color: #2c67ff;
+      }
+      .red_bold_text {
+        font-weight: 600;
+        color: red;
+      }
+      .varification_code {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        line-height: 28px;
+      }
+      .double_margin {
+        margin-top: 24px;
+      }
+      .btn_div {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .button {
+        width: max-content;
+        background-color: #2c67ff;
+        color: white;
+        padding: 15px 50px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+
+      .btn_div a:link {
+        color: white;
+      }
+
+
+      .btn_div a:active {
+        color: gray;
+      }
+      .copyright_section {
+        padding-left: 5%;
+        margin-top: 20px;
+      }
+      .copyright_section p {
+        color: #5c5d76;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .copyright_section a {
+        text-decoration: underline;
+        color: #5c5d76;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payrun_main_container">
+      <div class="container">
+        <div class="svg-img">
+          <div class="header">
+           <img  src="https://payrun-local-public.imgix.net/payrun_logo/logo.png"  width="500" height="500" class="paryrun_logo"/>
+            <h1>Leave Request Cancelled</h1>
+          </div>
+        </div>
+        <div class="content">
+          <p>Dear <span class="bold_text"><%= user_name %>,</span></p>
+          <div class="email_body">
+            <p>
+              This is to inform you that <span class="bold_text"><%= event_performed_by %></span> has cancelled a leave request. 
+            </p>
+            <div class="double_margin"> 
+              <p>Leave date: <span class="bold_text"><%= start_date %></span> to <span class="bold_text"><%= end_date %></p>
+              <p>Duration: <span class="bold_text"><%= duration %></p>
+              <p>Status: <span class="bold_text"><%= status %></span></p>
+            </div>
+            <div class="btn_div">
+              <a href="https://www.payrun.app" class="button">Go to app</a>
+            </div>
+          </div>
+         
+          <div class="email_footer double_margin">
+            <p>Regards</p>
+            <p class="bold_text"><%= org_name %></p>
+              <img
+              src="https://payrun-local-public.imgix.net/public/payrun_logo/Logo.png"
+              width="500"
+              height="500"
+              style="width: 75px; height: 20px; margin-top: 20px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="copyright_section">
+        <p>Copyright payrun 2024</p>
+        <p>
+          Payrun respects your right to privacy:
+          <a href="https://local.payrun.app/privacy-policy"
+            >View our policy</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
