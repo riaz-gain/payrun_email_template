@@ -107,17 +107,8 @@
       }
       .btn_div {
         padding: 20px;
-        display: flex;
-        justify-content: center;
-      }
-      .button {
-        width: max-content;
-        background-color: #2c67ff;
-        color: white;
-        padding: 15px 50px;
-        margin-bottom: 10px;
-        border-radius: 6px;
-        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
       }
 
       .btn_div a:link {
@@ -166,8 +157,20 @@
               will be invaluable in evaluating candidates and finding the
               perfect fit for our team.
             </p>
-            <div class="btn_div">
-              <a href="https://www.payrun.app" class="button">Go to app</a>
+            <div class="btn_div" style="color: white">
+              <a
+                href="https://www.payrun.app"
+                style="
+                  width: max-content;
+                  background-color: #2c67ff;
+                  color: white;
+                  padding: 15px 50px;
+                  margin-bottom: 10px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                "
+                >Go to app</a
+              >
             </div>
             <p>We look forward to your contributions!</p>
           </div>
@@ -179,7 +182,12 @@
               src="https://payrun-local-public.imgix.net/public/payrun_logo/Logo.png"
               width="500"
               height="500"
-              style="width: 75px; height: 20px; margin-top: 20px"
+              style="
+                width: 75px;
+                height: 20px;
+                margin-top: 20px;
+                object-fit: contain;
+              "
             />
           </div>
         </div>

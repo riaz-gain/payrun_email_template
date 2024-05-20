@@ -7,8 +7,8 @@
       }
       body {
         padding: 20px 0 !important;
-        display: flex;
-        justify-content: center;
+        text-align: center;
+        margin: 0 auto !important;
         background: #f3f3f3;
       }
       .payrun_main_container {
@@ -110,17 +110,8 @@
       }
       .btn_div {
         padding: 20px;
-        display: flex;
-        justify-content: center;
-      }
-      .button {
-        width: max-content;
-        background-color: #2c67ff;
-        color: white;
-        padding: 15px 50px;
-        margin-bottom: 10px;
-        border-radius: 6px;
-        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
       }
 
       .btn_div a:link {
@@ -171,8 +162,20 @@
               features designed to simplify and automate even the most complex
               HR tasks.
             </p>
-            <div class="btn_div">
-              <a href="<%= invitationUrl %>" class="button">Get Started </a>
+            <div class="btn_div" style="color: white">
+              <a
+                href="<%= invitationUrl %>"
+                style="
+                  width: max-content;
+                  background-color: #2c67ff;
+                  color: white;
+                  padding: 15px 50px;
+                  margin-bottom: 10px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                "
+                >Get Started
+              </a>
             </div>
             <p>
               If you have any questions or need assistance, our support team is
@@ -184,7 +187,7 @@
             </p>
           </div>
           <div class="email_footer double_margin">
-            <p>Regards</p>
+            <p>Regards,</p>
             <p>Payrun</p>
             <p class="blue_text">support@payrun.app</p>
             <p><a href="https://payrun.app/">www.payrun.app</a></p>
