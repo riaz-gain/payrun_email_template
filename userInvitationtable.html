@@ -13,25 +13,21 @@
         .payrun_main_container {
           width: 90% !important;
         }
-        .paryrun_logo {
+        .payrun_logo {
           max-width: 100px !important;
-          height: 25px !important;
-          padding-top: 0 !important;
+          height: auto !important;
         }
         .svg-img {
-          height: 100px !important;
+          height: auto !important;
         }
         .header {
-          line-height: 1vh !important;
-          padding-top: 10px !important;
-          padding-left: 5% !important;
-          height: max-content !important;
+          padding: 20px 5% !important;
         }
         .header h1 {
-          line-height: 5vh !important;
+          line-height: 30px !important;
           font-size: 16px !important;
           font-weight: 500 !important;
-          padding-top: 0px !important;
+          margin: 10px 0 0 0 !important;
         }
       }
     </style>
@@ -65,20 +61,13 @@
           >
             <div
               class="header"
-              style="
-                line-height: 2vh;
-                color: white;
-                padding-left: 5%;
-                padding-right: 5%;
-                width: max;
-                height: 100%;
-              "
+              style="line-height: 2vh; color: white; padding: 20px 5%"
             >
               <img
                 src="https://payrun-local-public.imgix.net/payrun_logo/logo.png"
-                class="paryrun_logo"
+                class="payrun_logo"
                 alt="Payrun Logo"
-                style="max-width: 130px; height: 35px; padding-top: 20px"
+                style="max-width: 130px; height: 35px"
               />
               <h1
                 style="
@@ -86,7 +75,7 @@
                   font-weight: 500;
                   line-height: 2vh;
                   color: white;
-                  margin: 0;
+                  margin: 10px 0 0 0;
                 "
               >
                 You're Invited! Accept Your User Invitation Now
@@ -100,10 +89,11 @@
             <p>
               We're thrilled to invite you to join the
               <span style="font-weight: 600; line-height: 2vh"
-                >{dept_name}</span
+                ><% dept_name %></span
               >
               team at
-              <span style="font-weight: 600; line-height: 2vh">{org_name}</span
+              <span style="font-weight: 600; line-height: 2vh"
+                ><% org_name %></span
               >. Your expertise will be a valuable asset to our team.
             </p>
             <p>
@@ -111,22 +101,26 @@
               officially join our team.
             </p>
             <div
-              class="btn_div"
-              style="padding: 20px 0; text-align: center; margin: 0 auto"
+              style="
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                margin: 0 auto;
+              "
             >
               <a
-                href="https://www.payrun.app"
+                href="<%= invitation_url %>"
                 style="
+                  width: max-content;
                   background-color: #2c67ff;
                   color: white;
                   padding: 15px 50px;
+                  margin-bottom: 10px;
                   border-radius: 6px;
-                  white-space: nowrap;
-                  display: inline-block;
                   text-decoration: none;
                 "
-                >Accept Invitation</a
-              >
+                >Accept Invitation
+              </a>
             </div>
             <p>We can't wait to welcome you to the team!</p>
           </td>
@@ -138,16 +132,19 @@
               <%= event_performed_by %>
             </p>
             <p style="font-weight: 600; line-height: 1vh"><%= org_name %></p>
+            <% if (org_logo) { %>
             <img
-              src="https://payrun-local-public.imgix.net/public/payrun_logo/Logo.png"
+              src="<%= org_logo %>"
+              width="500"
+              height="500"
               style="
                 width: 75px;
                 height: 20px;
-                margin-top: 10px;
+                margin-top: 20px;
                 object-fit: contain;
               "
-              alt="Logo"
             />
+            <% } %>
           </td>
         </tr>
       </table>
@@ -166,7 +163,7 @@
             <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
               Payrun respects your right to privacy:
               <a
-                href="https://local.payrun.app/privacy-policy"
+                href="https://payrun.app/privacy-policy"
                 style="
                   text-decoration: underline;
                   color: #5c5d76;
