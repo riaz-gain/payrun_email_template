@@ -184,7 +184,11 @@
       </table>
       <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-          Copyright payrun 2024
+          Copyright Payrun
+          <span
+            id="year"
+            style="color: #5c5d76; font-size: 12px; font-weight: 400"
+          ></span>
         </p>
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
           Payrun respects your right to privacy:
@@ -198,3 +202,6 @@
     </div>
   </body>
 </html>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
