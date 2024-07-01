@@ -33,9 +33,6 @@
         .content {
           padding: 20px 5% !important;
         }
-        .btn_div {
-          padding: 20px 0;
-        }
       }
     </style>
   </head>
@@ -131,7 +128,7 @@
               </div>
               <div class="btn_div" style="padding: 20px 0; text-align: center">
                 <a
-                  href="https://www.payrun.app"
+                  href="<%= org_url %>"
                   style="
                     width: max-content;
                     background-color: #2c67ff;
@@ -168,11 +165,7 @@
       </table>
       <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-          Copyright Payrun
-          <span
-            id="year"
-            style="color: #5c5d76; font-size: 12px; font-weight: 400"
-          ></span>
+          Copyright Payrun 2024
         </p>
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
           Payrun respects your right to privacy:
@@ -186,7 +179,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>

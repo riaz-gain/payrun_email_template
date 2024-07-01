@@ -73,9 +73,8 @@
             >
               <img
                 src="https://payrun-local-public.imgix.net/payrun_logo/logo.png"
-                width="500"
-                height="500"
                 class="paryrun_logo"
+                alt="Payrun Logo"
                 style="max-width: 130px; height: 35px; padding-top: 20px"
               />
               <h1
@@ -84,8 +83,7 @@
                   font-weight: 500;
                   line-height: 20px;
                   color: white;
-                  text-align: left;
-                  height: 100%;
+                  margin: 0;
                   padding-top: 5px;
                 "
               >
@@ -156,7 +154,7 @@
                 "
               >
                 <a
-                  href="https://www.payrun.app"
+                  href="<%= org_url %>"
                   style="
                     width: max-content;
                     background-color: #2c67ff;
@@ -195,11 +193,7 @@
       </table>
       <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-          Copyright Payrun
-          <span
-            id="year"
-            style="color: #5c5d76; font-size: 12px; font-weight: 400"
-          ></span>
+          Copyright Payrun 2024
         </p>
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
           Payrun respects your right to privacy:
@@ -213,7 +207,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
