@@ -13,21 +13,27 @@
         .payrun_main_container {
           width: 90% !important;
         }
-        .payrun_logo {
-          max-width: 100px !important;
-          height: auto !important;
+        .paryrun_logo {
+          max-width: 120px !important;
+          height: 25px !important;
+          padding-top: 0 !important;
         }
         .svg-img {
-          height: auto !important;
+          height: 100px !important;
         }
         .header {
-          padding: 20px 5% !important;
+          padding-top: 10px !important;
+          padding-left: 20px !important;
+          height: max-content !important;
         }
         .header h1 {
           line-height: 30px !important;
           font-size: 16px !important;
           font-weight: 500 !important;
-          margin: 10px 0 0 0 !important;
+          padding-top: 0px !important;
+        }
+        .content {
+          padding: 20px 5% !important;
         }
       }
     </style>
@@ -45,8 +51,6 @@
           width: 100%;
           height: max-content;
           font-size: 12px;
-          text-align: justify;
-          text-justify: inter-word;
         "
       >
         <tr>
@@ -62,7 +66,7 @@
             <div
               class="header"
               style="
-                line-height: 2vh;
+                line-height: 20px;
                 color: white;
                 padding-left: 30px;
                 height: 100%;
@@ -93,7 +97,9 @@
           <td class="content" style="padding: 40px 5%">
             <p>
               Hello
-              <span class="bold_text" style="font-weight: 600; line-height: 2vh"
+              <span
+                class="bold_text"
+                style="font-weight: 600; line-height: 20px"
                 ><%= user_name %>,</span
               >
             </p>
@@ -156,7 +162,7 @@
       </table>
       <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-          Copyright payrun 2024
+          Copyright Payrun 2024
         </p>
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
           Payrun respects your right to privacy:

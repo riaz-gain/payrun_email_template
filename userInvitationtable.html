@@ -4,30 +4,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
       * {
         font-family: "Poppins", sans-serif;
       }
-
       @media screen and (max-width: 768px) {
         .payrun_main_container {
           width: 90% !important;
         }
-        .payrun_logo {
-          max-width: 100px !important;
-          height: auto !important;
+        .paryrun_logo {
+          max-width: 120px !important;
+          height: 25px !important;
+          padding-top: 0 !important;
         }
         .svg-img {
           height: auto !important;
         }
         .header {
-          padding: 20px 5% !important;
+          padding: 5px 5% !important;
         }
         .header h1 {
-          line-height: 30px !important;
+          line-height: 20px !important;
           font-size: 16px !important;
           font-weight: 500 !important;
-          margin: 10px 0 0 0 !important;
+          margin: 0 0 10px 0 !important;
+        }
+        .content {
+          padding: 20px 5% !important;
+        }
+        .btn_div {
+          padding: 20px 0;
         }
       }
     </style>
@@ -44,8 +49,6 @@
           width: 100%;
           height: max-content;
           font-size: 12px;
-          text-align: justify;
-          text-justify: inter-word;
         "
       >
         <tr>
@@ -61,7 +64,7 @@
           >
             <div
               class="header"
-              style="line-height: 2vh; color: white; padding: 20px 5%"
+              style="line-height: 20px; color: white; padding: 20px 5%"
             >
               <img
                 src="https://payrun-local-public.imgix.net/payrun_logo/logo.png"
@@ -73,7 +76,7 @@
                 style="
                   font-size: 20px;
                   font-weight: 500;
-                  line-height: 2vh;
+                  line-height: 20px;
                   color: white;
                   margin: 10px 0 0 0;
                 "
@@ -88,11 +91,11 @@
             <p>Hello</p>
             <p>
               We're thrilled to invite you to join the
-              <span style="font-weight: 600; line-height: 2vh"
+              <span style="font-weight: 600; line-height: 20px"
                 ><% dept_name %></span
               >
               team at
-              <span style="font-weight: 600; line-height: 2vh"
+              <span style="font-weight: 600; line-height: 20px"
                 ><% org_name %></span
               >. Your expertise will be a valuable asset to our team.
             </p>
@@ -158,7 +161,11 @@
         <tr>
           <td>
             <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-              Copyright payrun 2024
+              Copyright Payrun
+              <span
+                id="year"
+                style="color: #5c5d76; font-size: 12px; font-weight: 400"
+              ></span>
             </p>
             <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
               Payrun respects your right to privacy:
