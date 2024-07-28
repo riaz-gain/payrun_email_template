@@ -88,35 +88,51 @@
           <td class="content" style="padding: 40px 5%">
             <p>
               Dear
-              <span class="bold_text" style="font-weight: 600">John Doe,</span>
+              <span
+                class="bold_text"
+                style="font-weight: 600; line-height: 20px"
+                ><%= user_name %>,</span
+              >
             </p>
             <div class="email_body">
               <p>
                 This is to inform you that
-                <span class="bold_text" style="font-weight: 600"
-                  >John Smith</span
+                <span
+                  class="bold_text"
+                  style="font-weight: 600; line-height: 20px"
+                  ><%= event_performed_by %></span
                 >
                 has cancelled your leave.
               </p>
               <div class="double_margin">
                 <p>
                   Leave date:
-                  <span class="bold_text" style="font-weight: 600"
-                    >June 25, 2024</span
+                  <span
+                    class="bold_text"
+                    style="font-weight: 600; line-height: 20px"
+                    ><%= start_date %></span
                   >
                   to
-                  <span class="bold_text" style="font-weight: 600"
-                    >June 30, 2024</span
+                  <span
+                    class="bold_text"
+                    style="font-weight: 600; line-height: 20px"
+                    ><%= end_date %></span
                   >
                 </p>
                 <p>
                   Duration:
-                  <span class="bold_text" style="font-weight: 600">6 days</span>
+                  <span
+                    class="bold_text"
+                    style="font-weight: 600; line-height: 20px"
+                    ><%= duration %></span
+                  >
                 </p>
                 <p>
                   Status:
-                  <span class="bold_text" style="font-weight: 600"
-                    >Cancelled</span
+                  <span
+                    class="bold_text"
+                    style="font-weight: 600; line-height: 20px"
+                    ><%= status %></span
                   >
                 </p>
               </div>
