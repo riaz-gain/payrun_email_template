@@ -1,133 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-    * {
-      font-family: "Poppins", sans-serif;
-    }
-
-    @media screen and (max-width: 768px) {
-      .payrun_main_container {
-        width: 90% !important;
+      * {
+        font-family: "Poppins", sans-serif;
       }
 
-      .paryrun_logo {
-        max-width: 120px !important;
-        height: 25px !important;
-        padding-top: 0 !important;
-      }
+      @media screen and (max-width: 768px) {
+        .payrun_main_container {
+          width: 90% !important;
+        }
 
-      .svg-img {
-        height: 100px !important;
-      }
+        .paryrun_logo {
+          max-width: 120px !important;
+          height: 25px !important;
+          padding-top: 0 !important;
+        }
 
-      .header {
-        padding-top: 10px !important;
-        padding-left: 20px !important;
-        height: max-content !important;
-      }
+        .svg-img {
+          height: 100px !important;
+        }
 
-      .header h1 {
-        line-height: 30px !important;
-        font-size: 16px !important;
-        font-weight: 500 !important;
-        padding-top: 0px !important;
-      }
+        .header {
+          padding-top: 10px !important;
+          padding-left: 20px !important;
+          height: max-content !important;
+        }
 
-      .content {
-        padding: 20px 5% !important;
-      }
-    }
-  </style>
-</head>
+        .header h1 {
+          line-height: 30px !important;
+          font-size: 16px !important;
+          font-weight: 500 !important;
+          padding-top: 0px !important;
+        }
 
-<body style="padding: 20px 0; background: #f3f3f3; margin: 0">
-  <div class="payrun_main_container" style="width: 60%; margin: 0 auto">
-    <table class="container" cellpadding="0" cellspacing="0" style="
+        .content {
+          padding: 20px 5% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="padding: 20px 0; background: #f3f3f3; margin: 0">
+    <div class="payrun_main_container" style="width: 60%; margin: 0 auto">
+      <table
+        class="container"
+        cellpadding="0"
+        cellspacing="0"
+        style="
           background: white;
           padding: 0;
           width: 100%;
           height: max-content;
           font-size: 12px;
-        ">
-      <tr>
-        <td class="svg-img" style="
+        "
+      >
+        <tr>
+          <td
+            class="svg-img"
+            style="
               height: 120px;
               background-image: url('https://payrun-local-public.imgix.net/payrun_logo/email_banner.png?h=500&w=1200');
               background-repeat: no-repeat;
               background-size: cover;
-            ">
-          <div class="header" style="
+            "
+          >
+            <div
+              class="header"
+              style="
                 line-height: 20px;
                 color: white;
                 padding-left: 30px;
                 height: 100%;
-              ">
-            <img src="https://payrun-local-public.imgix.net/payrun_logo/logo.png" class="paryrun_logo" alt="Payrun Logo"
-              style="max-width: 130px; height: 35px; padding-top: 20px" />
-            <h1 style="
+              "
+            >
+              <img
+                src="https://payrun-local-public.imgix.net/payrun_logo/logo.png"
+                class="paryrun_logo"
+                alt="Payrun Logo"
+                style="max-width: 130px; height: 35px; padding-top: 20px"
+              />
+              <h1
+                style="
                   font-size: 20px;
                   font-weight: 500;
                   line-height: 20px;
                   color: white;
                   margin: 0;
                   padding-top: 5px;
-                ">
-              Invitation to Manage Payrun Admin App
-            </h1>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="content" style="padding: 40px 5%">
-          <p>Hello,</p>
-          <div class="email_body">
-            <p>
-              I hope you're doing well. I'd like to invite you to become a
-              manager for our Payrun Admin App.
-            </p>
-            <p>
-              As a manager, you'll have the authority to oversee operations
-              and assist in delivering exceptional service to our clients.
-            </p>
-            <p>To accept this invitation, simply click on the link below:</p>
-
-            <%= invitationUrl %>
-            
+                "
+              >
+                Invitation to Manage Payrun Admin App
+              </h1>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="content" style="padding: 40px 5%">
+            <p>Hello,</p>
+            <div class="email_body">
+              <p>
+                I hope you're doing well. I'd like to invite you to become a
+                manager for our Payrun Admin App.
+              </p>
+              <p>
+                As a manager, you'll have the authority to oversee operations
+                and assist in delivering exceptional service to our clients.
+              </p>
+              <p>To accept this invitation, simply click on the link below:</p>
+              <div
+                class="btn_div"
+                style="padding: 20px 0; text-align: center; margin: 0 auto"
+              >
+                <a
+                  href="<%= invitationUrl %>"
+                  style="
+                    width: max-content;
+                    background-color: #2c67ff;
+                    color: white;
+                    padding: 15px 50px;
+                    margin-bottom: 10px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    white-space: nowrap;
+                  "
+                  >Invite Link</a
+                >
+              </div>
               <p>Looking forward to having you on board!!</p>
-          </div>
-          <div class="email_footer" style="margin-top: 24px">
-            <p style="line-height: 50%">Regards,</p>
-            <p class="bold_text" style="font-weight: 600; line-height: 50%">
-              <%= event_performed_by %>
-            </p>
-            <% if (org_logo) { %>
-              <img src="<%= org_logo %>" width="500" height="500" style="
+            </div>
+            <div class="email_footer" style="margin-top: 24px">
+              <p style="line-height: 50%">Regards,</p>
+              <p class="bold_text" style="font-weight: 600; line-height: 50%">
+                <%= event_performed_by %>
+              </p>
+              <% if (org_logo) { %>
+              <img
+                src="<%= org_logo %>"
+                width="500"
+                height="500"
+                style="
                   width: 75px;
                   height: 20px;
                   margin-top: 20px;
                   object-fit: contain;
-                " />
+                "
+              />
               <% } %>
-          </div>
-        </td>
-      </tr>
-    </table>
-    <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
-      <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-        Copyright Payrun 2024
-      </p>
-      <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
-        Payrun respects your right to privacy:
-        <a href="https://payrun.app/privacy-policy"
-          style="text-decoration: underline; color: #5c5d76; cursor: pointer">View our policy</a>
-      </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
+        <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
+          Copyright Payrun 2024
+        </p>
+        <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
+          Payrun respects your right to privacy:
+          <a
+            href="https://payrun.app/privacy-policy"
+            style="text-decoration: underline; color: #5c5d76; cursor: pointer"
+            >View our policy</a
+          >
+        </p>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
