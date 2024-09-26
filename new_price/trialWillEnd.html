@@ -93,8 +93,8 @@
               Hello
               <span
                 class="bold_text"
-                style="font-weight: 600; line-height: 20px"
-                ><%= user_name %>,</span
+                style="font-weight: 600; line-height: 20px">
+                {{ customerName }},</span
               >
             </p>
             <div class="email_body">
@@ -122,7 +122,7 @@
                   margin: 0 auto;
                 ">
                 <a
-                  href="https://www.payrun.app/pricing"
+                  href="{{ url }}/pricing"
                   style="
                     width: max-content;
                     background-color: #2c67ff;
@@ -151,10 +151,8 @@
               <p>Payrun</p>
               <p class="blue_text" style="color: #2c67ff">support@payrun.app</p>
               <p>
-                <a
-                  href="https://www.payrun.app/"
-                  style="text-decoration: none; color: #2c67ff"
-                  >www.payrun.app</a
+                <a href="{{url}}" style="text-decoration: none; color: #2c67ff"
+                  >{{url}}</a
                 >
               </p>
             </div>
@@ -168,7 +166,7 @@
         <p style="color: #5c5d76; font-size: 12px; font-weight: 400">
           Payrun respects your right to privacy:
           <a
-            href="https://payrun.app/privacy-policy"
+            href="{{ url }}/privacy-policy"
             style="text-decoration: underline; color: #5c5d76; cursor: pointer"
             >View our policy</a
           >
