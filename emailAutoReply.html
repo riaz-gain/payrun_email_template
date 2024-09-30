@@ -4,11 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
       * {
         font-family: "Poppins", sans-serif;
       }
-
       @media screen and (max-width: 768px) {
         .payrun_main_container {
           width: 90% !important;
@@ -83,7 +81,7 @@
                     margin: 0;
                     padding-top: 5px;
                   ">
-                  Payrun Trial Ends Soon
+                  Verify Your Email
                 </h1>
               </div>
             </td>
@@ -98,68 +96,25 @@
                   {{ customerName }},</span
                 >
               </p>
+
               <div class="email_body">
+                <p>Thank you for reaching out to us!</p>
                 <p>
-                  Just a friendly reminder that your
-                  <span
-                    class="bold_text"
-                    style="font-weight: 600; line-height: 20px"
-                    >trial ends in just three days.</span
-                  >
-                  Upgrading to a paid plan ensures your HR processes run
-                  smoothly with automated features, saving you valuable time.
+                  Unfortunately, we could not identify the job you are referring
+                  to based on your recent email. To assist you better, please
+                  reply to the original email we sent regarding your
+                  application.
                 </p>
                 <p>
-                  We offer a variety of plans to fit your team size and budget.
-                  As your business grows, our plans can scale with you,
-                  providing the flexibility and support you need to succeed.
+                  If you have any other questions or need further assistance,
+                  feel free to reach out.
                 </p>
-                <div
-                  class="btn_div"
-                  style="
-                    color: white;
-                    padding: 20px 0;
-                    text-align: center;
-                    margin: 0 auto;
-                  ">
-                  <a
-                    href="{{ url }}/pricing"
-                    style="
-                      width: max-content;
-                      background-color: #2c67ff;
-                      color: white;
-                      padding: 15px 50px;
-                      margin-bottom: 10px;
-                      border-radius: 6px;
-                      text-decoration: none;
-                      white-space: nowrap;
-                    "
-                    >View pricing</a
-                  >
-                </div>
-                <p>
-                  If you have any questions before upgrading, our friendly
-                  support team is happy to help. Feel free to reach out to us at
-                  support@payrun.app
-                </p>
-                <p>
-                  Thank you for considering Payrun! We look forward to
-                  continuing to support you and your team.
-                </p>
+                <p>Thank you for your understanding!</p>
               </div>
               <div class="email_footer" style="margin-top: 24px">
-                <p>Regards,</p>
-                <p>Payrun</p>
-                <p class="blue_text" style="color: #2c67ff">
-                  support@payrun.app
-                </p>
-                <p>
-                  <a
-                    href="{{url}}"
-                    style="text-decoration: none; color: #2c67ff"
-                    >{{url}}</a
-                  >
-                </p>
+                <p>Best regards,</p>
+                <p>{{org_name}}</p>
+                <p>{{org_logo}}</p>
               </div>
             </td>
           </tr>

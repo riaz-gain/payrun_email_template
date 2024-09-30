@@ -48,7 +48,6 @@
             font-size: 12px;
           ">
       {{#if (eq no_of_failed_payments 0)}}
-        <>
           <tr>
             <td class="svg-img" style="
                 height: 120px;
@@ -71,7 +70,7 @@
                     margin: 0;
                     padding-top: 5px;
                   ">
-                  Payment Failed
+                  Important: Update Your Payrun Payment
                 </h1>
               </div>
             </td>
@@ -89,9 +88,7 @@
                   Payrun Payment has failed.
                 </p>
                 <p>
-                  As a valued subscriber to Payrun, we appreciate your trust in
-                  our software. However, we noticed that your {{monthly/yearly}}
-                  subscription payment is overdue.
+                As a valued subscriber to Payrun, we appreciate your trust in our software. However, we noticed that your subscription payment is overdue.
                 </p>
                 <p class="double_margin">
                   <span class="red_bold_text">Reason for Payment Failure :</span>
@@ -120,9 +117,7 @@
               </div>
             </td>
           </tr>
-        </>
       {{else if (eq no_of_failed_payments 1)}}
-        <>
           <tr>
             <td class="svg-img" style="
                 height: 120px;
@@ -145,7 +140,7 @@
                     margin: 0;
                     padding-top: 5px;
                   ">
-                  Payment Failed Second Attempt.
+                  Important: Your Payrun Subscription Payment is Overdue
                 </h1>
               </div>
             </td>
@@ -205,9 +200,7 @@
               </div>
             </td>
           </tr>
-        </>
       {{else if (eq no_of_failed_payments 2)}}
-        <>
           <tr>
             <td class="svg-img" style="
                 height: 120px;
@@ -230,7 +223,7 @@
                     margin: 0;
                     padding-top: 5px;
                   ">
-                  Payment Failed Third Attempt.
+                 Urgent: Payrun Subscription at Risk of Suspension
                 </h1>
               </div>
             </td>
@@ -290,9 +283,7 @@
               </div>
             </td>
           </tr>
-        </>
       {{else}}
-        <>
           <tr>
             <td class="svg-img" style="
                 height: 120px;
@@ -315,7 +306,7 @@
                     margin: 0;
                     padding-top: 5px;
                   ">
-                  Payment Failed for Your Payrun Subscription
+                  Attention Needed: Payrun Subscription Suspended
                 </h1>
               </div>
             </td>
@@ -357,7 +348,6 @@
               </div>
             </td>
           </tr>
-        </>
       {{/if}}
     </table>
     <div class="copyright_section" style="padding-left: 5%; margin-top: 20px">
